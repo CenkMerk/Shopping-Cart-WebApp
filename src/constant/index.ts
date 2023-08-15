@@ -9,7 +9,7 @@ import P8 from "../assets/p8.webp";
 const ProductItemsData = [
   {
     id: 1,
-    title: "Kolsuz Midi Elbise",
+    title: "Sleeveless Midi Dress",
     price: 299,
     img1: P1,
     img2: P2,
@@ -17,23 +17,24 @@ const ProductItemsData = [
   },
   {
     id: 2,
-    title: "Askılı Midi Elbise",
-    price: 299,
-    img1: P3,
-    img2: P4,
-    quantity: 1,
-  },
-  {
-    id: 3,
-    title: "Drapeli Elbise",
+    title: "Draped Dress",
     price: 559,
     img1: P5,
     img2: P6,
     quantity: 1,
   },
   {
+    id: 3,
+    title: "Strappy Midi Dress",
+    price: 299,
+    img1: P3,
+    img2: P4,
+    quantity: 1,
+  },
+
+  {
     id: 4,
-    title: "Askılı Elbise",
+    title: "Dress with Straps",
     price: 759,
     img1: P7,
     img2: P8,

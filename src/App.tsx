@@ -3,7 +3,11 @@ import { Stack } from "@mui/material";
 
 function App() {
   return (
-    <Stack>
+    <Stack
+      minHeight="100vh"
+      justifyContent="center"
+      sx={{ backgroundColor: "#F0F3E8", paddingY: "20px" }}
+    >
       <ProductsList />
     </Stack>
   );

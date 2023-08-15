@@ -1,6 +1,7 @@
-import Stack from "@mui/material/Stack/Stack";
 import Typography from "@mui/material/Typography";
 import { ProductItemProps } from "../types";
+import Box from "@mui/material/Box";
+import ProductImage from "./ProductImage";
 
 const ProductItem = ({
   id,
@@ -10,17 +11,21 @@ const ProductItem = ({
   quantity,
   title,
 }: ProductItemProps) => {
-  console.log(id, img1, img2, price, quantity, title);
   return (
-    <Stack>
-      <img src={`${img1}`} alt={`${title}`} width="100%" />
-      <Typography variant="h5" gutterBottom>
-        h5. Heading
+    <Box boxShadow={3}>
+      <ProductImage img1={img1} img2={img2} />
+      <Typography
+        variant="subtitle1"
+        paddingX="10px"
+        color="#386a20"
+        fontWeight={600}
+      >
+        {title}
       </Typography>
-      <Typography variant="h6" gutterBottom>
-        h6. Heading
+      <Typography variant="h6" gutterBottom paddingX="10px" color="#386a20">
+        ${price}
       </Typography>
-    </Stack>
+    </Box>
   );
 };
 

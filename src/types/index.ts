@@ -6,3 +6,8 @@ export interface ProductItemProps {
   img2: string;
   quantity: number;
 }
+
+export interface ProductImageProps {
+  img1: string;
+  img2: string;
+}
