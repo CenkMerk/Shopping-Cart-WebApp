@@ -5,8 +5,8 @@ export const CustomDrawer = styled(Drawer)(({ theme }) => ({
   position: "relative",
   "& .MuiDrawer-paper": {
     width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "30%",
+    [theme.breakpoints.up("sm")]: {
+      width: "400px",
     },
   },
 }));
@@ -36,4 +36,5 @@ export const CloseButton = styled(Button)({
   "&:hover": {
     backgroundColor: "#386a20",
   },
+  fontWeight:"600",
 });
