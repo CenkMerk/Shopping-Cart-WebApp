@@ -2,6 +2,8 @@
 
 This project is a shopping cart application developed using React and TypeScript. Users can select products from a list of available items and add them to the shopping cart. They can also perform actions such as removing items, increasing or decreasing quantities within the cart.
 
+**To View the Live Project:** [Click Here](https://shopping-cart-webapp-cenkmerk.netlify.app/)
+
 ## 🚀 Technologies Used
 
 - React: Used as the core technology for building the user interface.
