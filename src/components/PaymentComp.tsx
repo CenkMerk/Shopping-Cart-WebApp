@@ -13,7 +13,7 @@ const PaymentComp = () => {
 
   const HandleClick = () => {
     dispatch(clearCart());
-    alert(`Ödenen Tutar: ${total} TL`);
+    alert(`Amount Paid: $ ${total}`);
   };
 
   return (
