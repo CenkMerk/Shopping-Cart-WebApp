@@ -7,10 +7,10 @@ function App() {
     <Stack
       minHeight="100vh"
       justifyContent="center"
-      sx={{ backgroundColor: "#F0F3E8", paddingY: "50px" }}
+      sx={{ backgroundColor: "#F0F3E8"}}
       position="relative"
     >
-      <CartDrawer />
+      <CartDrawer /> 
       <ProductsList />
     </Stack>
   );

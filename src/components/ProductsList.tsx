@@ -1,17 +1,7 @@
-import Button from "@mui/material/Button";
 import ProductItem from "./ProductItem";
 import ProductItemsData from "../constant";
 import Grid from "@mui/material/Grid";
-import { styled } from "@mui/material/styles";
-
-const AddToBagButton = styled(Button)({
-  borderRadius: "10px 10px 0px 0px",
-  width: "200px",
-  backgroundColor: "#B3261E",
-  "&:hover": {
-    backgroundColor: "#386a20",
-  },
-});
+import { AddToBagButton } from "../style";
 
 const ProductsList = () => {
   return (
