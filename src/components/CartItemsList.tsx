@@ -4,9 +4,7 @@ import { Stack } from "@mui/material";
 import CartProduct from "./CartProduct";
 
 const CartItemsList = () => {
-  const selectItem = useSelector(
-    (state: RootState) => state.counter.selectItems
-  );
+  const selectItem = useSelector((state: RootState) => state.cart.selectItems);
 
   return (
     <Stack>
