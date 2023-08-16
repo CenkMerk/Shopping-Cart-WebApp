@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { CloseButton, CustomDrawer, DrawerButton } from "../style";
-import CartItemList from "./CartItemList";
+import CartItemsList from "./CartItemsList";
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { Typography } from "@mui/material";
 
 const CartDrawer = () => {
   const [open, setOpen] = useState(false);
@@ -15,8 +17,14 @@ const CartDrawer = () => {
         BAG
       </DrawerButton>
       <CustomDrawer anchor="right" open={open} onClose={() => setOpen(false)}>
-        <CloseButton variant="contained">KEEP SHOPPİNG</CloseButton>
-        <CartItemList />
+        <CloseButton
+          variant="contained"
+          onClick={() => setOpen(false)}
+          startIcon={<IoMdArrowRoundBack />}
+        >
+          KEEP SHOPPİNG
+        </CloseButton>
+        <CartItemsList />
       </CustomDrawer>
     </>
   );
