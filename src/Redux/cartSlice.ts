@@ -26,9 +26,30 @@ const cartSlice = createSlice({
         ];
       }
     },
+    increase: (state, action) => {
+      const cartItem = state.selectItems.find(
+        (item) => item.id === action.payload
+      );
+      if (cartItem) {
+        cartItem.quantity++;
+      }
+    },
+    descrease: (state, action) => {
+      const cartItem = state.selectItems.find(
+        (item) => item.id === action.payload
+      );
+      if (cartItem) {
+        cartItem.quantity--;
+      }
+    },
+    removeItem: (state, action) => {
+      state.selectItems = state.selectItems.filter(
+        (item) => item.id !== action.payload
+      );
+    },
   },
 });
 
-export const { addItem } = cartSlice.actions;
+export const { addItem, increase, descrease,removeItem } = cartSlice.actions;
 
 export default cartSlice.reducer;
