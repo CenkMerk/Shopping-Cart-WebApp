@@ -11,3 +11,11 @@ export interface ProductImageProps {
   img1: string;
   img2: string;
 }
+
+export interface CartItem {
+  id: number;
+  title: string;
+  price: number;
+  img1: string;
+  quantity: number;
+}
