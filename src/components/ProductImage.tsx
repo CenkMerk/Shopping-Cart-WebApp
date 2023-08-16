@@ -12,6 +12,7 @@ const ProductImage = ({ img1, img2 }: ProductImageProps) => {
       loading="lazy"
       onMouseEnter={() => setImgValue(img2)}
       onMouseLeave={() => setImgValue(img1)}
+      style={{cursor:"pointer"}}
     />
   );
 };

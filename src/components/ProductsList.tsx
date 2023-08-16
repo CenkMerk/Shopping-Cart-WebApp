@@ -2,8 +2,11 @@ import ProductItem from "./ProductItem";
 import ProductItemsData from "../constant";
 import Grid from "@mui/material/Grid";
 import { AddToBagButton } from "../style";
+import { useDispatch } from "react-redux";
+import { addItem } from "../Redux/cartSlice";
 
 const ProductsList = () => {
+  const dispatch = useDispatch();
   return (
     <Grid container spacing={2}>
       {ProductItemsData.map((item, index) => (
@@ -20,7 +23,7 @@ const ProductsList = () => {
         >
           <AddToBagButton
             variant="contained"
-            onClick={() => console.log(item.title)}
+            onClick={() => dispatch(addItem(item))}
           >
             ADD TO BAG
           </AddToBagButton>
