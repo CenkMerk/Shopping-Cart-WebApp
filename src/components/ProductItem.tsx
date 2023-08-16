@@ -3,14 +3,7 @@ import { ProductItemProps } from "../types";
 import Box from "@mui/material/Box";
 import ProductImage from "./ProductImage";
 
-const ProductItem = ({
-  id,
-  img1,
-  img2,
-  price,
-  quantity,
-  title,
-}: ProductItemProps) => {
+const ProductItem = ({ img1, img2, price, title }: ProductItemProps) => {
   return (
     <Box boxShadow={3}>
       <ProductImage img1={img1} img2={img2} />

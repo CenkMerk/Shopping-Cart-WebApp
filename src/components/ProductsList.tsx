@@ -7,6 +7,7 @@ import { addItem } from "../Redux/cartSlice";
 
 const ProductsList = () => {
   const dispatch = useDispatch();
+
   return (
     <Grid container spacing={2}>
       {ProductItemsData.map((item, index) => (
@@ -28,12 +29,10 @@ const ProductsList = () => {
             ADD TO BAG
           </AddToBagButton>
           <ProductItem
-            id={item.id}
             img1={item.img1}
             img2={item.img2}
             price={item.price}
             title={item.title}
-            quantity={item.quantity}
           />
         </Grid>
       ))}

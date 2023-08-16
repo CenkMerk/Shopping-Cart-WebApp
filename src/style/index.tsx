@@ -38,3 +38,13 @@ export const CloseButton = styled(Button)({
   },
   fontWeight:"600",
 });
+
+export const PaymentButton = styled(Button)({
+  borderRadius: "0px",
+  padding:"20px 0px",
+  backgroundColor: "#386a20",
+  "&:hover": {
+    backgroundColor: "#386a20",
+  },
+  fontWeight:"600",
+});

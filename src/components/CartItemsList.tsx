@@ -7,7 +7,7 @@ const CartItemsList = () => {
   const selectItem = useSelector((state: RootState) => state.cart.selectItems);
 
   return (
-    <Stack>
+    <Stack maxHeight="500px" sx={{ overflowY: "overlay" }}>
       {selectItem.map((item) => (
         <CartProduct
           id={item.id}

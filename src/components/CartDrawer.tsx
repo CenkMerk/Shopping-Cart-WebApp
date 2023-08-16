@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CloseButton, CustomDrawer, DrawerButton } from "../style";
 import CartItemsList from "./CartItemsList";
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { Typography } from "@mui/material";
+import PaymentComp from "./PaymentComp";
 
 const CartDrawer = () => {
   const [open, setOpen] = useState(false);
@@ -25,6 +25,7 @@ const CartDrawer = () => {
           KEEP SHOPPİNG
         </CloseButton>
         <CartItemsList />
+        <PaymentComp />
       </CustomDrawer>
     </>
   );
