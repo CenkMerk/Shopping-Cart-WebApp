@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { CustomDrawer, DrawerButton } from "../style";
+import { CloseButton, CustomDrawer, DrawerButton } from "../style";
+import CartItemList from "./CartItemList";
 
 const CartDrawer = () => {
   const [open, setOpen] = useState(false);
@@ -14,10 +15,8 @@ const CartDrawer = () => {
         BAG
       </DrawerButton>
       <CustomDrawer anchor="right" open={open} onClose={() => setOpen(false)}>
-        <div onClick={() => setOpen(false)}>
-          <h2>Drawer Content</h2>
-          <p>This is the content of the drawer.</p>
-        </div>
+        <CloseButton variant="contained">KEEP SHOPPİNG</CloseButton>
+        <CartItemList />
       </CustomDrawer>
     </>
   );
