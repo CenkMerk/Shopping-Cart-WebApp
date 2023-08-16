@@ -14,7 +14,12 @@ const ProductsList = () => {
   const dispatch = useDispatch();
 
   return (
-    <Grid container spacing={2}>
+    <Grid
+      container
+      spacing={2}
+      marginY="40px"
+      sx={{ margin: { md: "0px" }, paddingX: "20px" }}
+    >
       {ProductItemsData.map((item, index) => (
         <Grid
           item
