@@ -1,8 +1,10 @@
+//material ui
 import { Stack, Typography } from "@mui/material";
+//style
 import { PaymentButton } from "../style";
-import { useSelector } from "react-redux";
+//redux
+import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../Redux/store";
-import { useDispatch } from "react-redux";
 import { clearCart } from "../Redux/cartSlice";
 
 const PaymentComp = () => {
@@ -24,7 +26,11 @@ const PaymentComp = () => {
       >
         Total Amount : ${total}
       </Typography>
-      <PaymentButton variant="contained" onClick={HandleClick} disabled={total === 0}>
+      <PaymentButton
+        variant="contained"
+        onClick={HandleClick}
+        disabled={total === 0}
+      >
         Complete Payment
       </PaymentButton>
     </Stack>

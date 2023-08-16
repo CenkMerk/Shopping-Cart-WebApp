@@ -1,6 +1,9 @@
+//redux
 import { useSelector } from "react-redux";
 import { RootState } from "../Redux/store";
+//material iu
 import { Stack } from "@mui/material";
+//component
 import CartProduct from "./CartProduct";
 
 const CartItemsList = () => {

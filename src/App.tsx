@@ -1,7 +1,10 @@
+import { useEffect } from "react";
+//components
 import CartDrawer from "./components/CartDrawer";
 import ProductsList from "./components/ProductsList";
+//material ui
 import { Stack } from "@mui/material";
-import { useEffect } from "react";
+//redux
 import { useDispatch, useSelector } from "react-redux";
 import { calculateTotal } from "./Redux/cartSlice";
 import { RootState } from "./Redux/store";

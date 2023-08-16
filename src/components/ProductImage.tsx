@@ -1,4 +1,5 @@
 import { useState } from "react";
+//types
 import { ProductImageProps } from "../types";
 
 const ProductImage = ({ img1, img2 }: ProductImageProps) => {

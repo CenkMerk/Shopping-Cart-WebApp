@@ -1,7 +1,12 @@
+//component
 import ProductItem from "./ProductItem";
+//data
 import ProductItemsData from "../constant";
+//material ui
 import Grid from "@mui/material/Grid";
+//style
 import { AddToBagButton } from "../style";
+//redux
 import { useDispatch } from "react-redux";
 import { addItem } from "../Redux/cartSlice";
 

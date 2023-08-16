@@ -1,8 +1,12 @@
 import { useState } from "react";
+//style
 import { CloseButton, CustomDrawer, DrawerButton } from "../style";
+//components
 import CartItemsList from "./CartItemsList";
-import { IoMdArrowRoundBack } from "react-icons/io";
 import PaymentComp from "./PaymentComp";
+//icon
+import { IoMdArrowRoundBack } from "react-icons/io";
+
 
 const CartDrawer = () => {
   const [open, setOpen] = useState(false);

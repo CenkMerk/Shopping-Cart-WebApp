@@ -1,11 +1,16 @@
+//types
 import { CartItem } from "../types";
+//material ui
 import { Stack, Typography, Box, IconButton } from "@mui/material";
+//icons
 import { AiOutlinePlus, AiOutlineMinus, AiOutlineDelete } from "react-icons/ai";
+//redux
 import { useDispatch } from "react-redux";
 import { increase, descrease,removeItem } from "../Redux/cartSlice";
 
 const CartProduct = ({ id, img1, price, quantity, title }: CartItem) => {
   const dispatch = useDispatch();
+
   return (
     <Box
       boxShadow={3}

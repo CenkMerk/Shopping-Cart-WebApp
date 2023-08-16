@@ -1,6 +1,8 @@
-import Typography from "@mui/material/Typography";
+//material ui
+import {Typography,Box} from "@mui/material";
+//types
 import { ProductItemProps } from "../types";
-import Box from "@mui/material/Box";
+//component
 import ProductImage from "./ProductImage";
 
 const ProductItem = ({ img1, img2, price, title }: ProductItemProps) => {
