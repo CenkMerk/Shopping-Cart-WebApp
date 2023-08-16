@@ -12,6 +12,12 @@ export interface ProductImageProps {
   img2: string;
 }
 
+export interface CartState {
+  selectItems: CartItem[];
+  quantity: number;
+  total: number;
+}
+
 export interface CartItem {
   id: number;
   title: string;
